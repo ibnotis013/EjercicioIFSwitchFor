@@ -24,15 +24,15 @@ public class principal {
                 System.out.println("gengar se ha debilitado");
                 break;
             }
-            if (i==0){
+            if (i<1){
                 System.out.println("no hay mas turnos ");
             }
         }
         System.out.println("------------------------------");
         System.out.println("FIN DEL COMBATE");
-        if (vidapikachu<=0) {
+        if (vidapikachu<vidagengar) {
             System.out.println("GENGAR GANA");
-        }else if (vidagengar<=0) {
+        }else if (vidagengar<vidapikachu) {
             System.out.println("PIKACHU GANA");
         }else if (vidapikachu== vidagengar) {
             System.out.println("empate");
