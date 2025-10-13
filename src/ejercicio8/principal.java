@@ -7,7 +7,7 @@ public class principal {
 
         Scanner sc = new Scanner(System.in);
 
-        String entrada = "3";
+        boolean entrada = false;
 
         do {
             System.out.println("--------------------------");
@@ -24,30 +24,27 @@ public class principal {
                     String nombre = sc.nextLine();
                     switch (nombre) {
                         case "giratina":
-                            System.out.println("Altura4,5 m\n" +
-                                    "Peso750,0 kg\n" +
-                                    "SexoDesconocido\n" +
-                                    "CategoríaRenegado\n" +
-                                    "Habilidad\n" +
-                                    "Presión");
+                            System.out.println(" Altura: 4,5 m\n" +
+                                    " Peso: 750,0 kg\n" +
+                                    " Sexo: Desconocido\n" +
+                                    " Categoría: Renegado\n" +
+                                    " Habilidad: Presión");
                             break;
 
                         case "arceus":
-                            System.out.println("3,2 m\n" +
-                                    "Peso320,0 kg\n" +
-                                    "SexoDesconocido\n" +
-                                    "CategoríaAlfa\n" +
-                                    "Habilidad\n" +
-                                    "Multitipo");
+                            System.out.println(" Altura: 3,2 m\n" +
+                                    " Peso: 320,0 kg\n" +
+                                    " Sexo: Desconocido\n" +
+                                    " Categoría: Alfa\n" +
+                                    " Habilidad: Multitipo");
                             break;
 
                         case "deoxys":
-                            System.out.println("Altura1,7 m\n" +
-                                    "Peso60,8 kg\n" +
-                                    "SexoDesconocido\n" +
-                                    "CategoríaADN\n" +
-                                    "Habilidad\n" +
-                                    "Presión");
+                            System.out.println(" Altura: 1,7 m\n" +
+                                    " Peso: 60,8 kg\n" +
+                                    " Sexo: Desconocido\n" +
+                                    "Categoría: ADN\n" +
+                                    "Habilidad: Presión");
                             break;
 
                         default:
@@ -70,12 +67,12 @@ public class principal {
 
                 case "3":
                     System.out.println("SALIENDO DE LA POKEDEX");
+                    entrada = true;
                     break;
-
                 default:
                     System.out.println("OPCION NO VALIDA, POR FAVOR ELIGE DE NUEVO");
             }
-        }while ();
+        }while (!entrada);
 
 
     }
